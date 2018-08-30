@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Notes_SingletonPattern.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Notes_SingletonPattern.txt" />
+  </ItemGroup>
+
+</Project>
