@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A67AFFE-0AA5-42CB-9951-44346C6B0C11}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChapterFour</RootNamespace>
+    <AssemblyName>ChapterFour</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactory\Product\CheesePizza.cs" />
+    <Compile Include="AbstractFactory\Creator\ChicagoPizzaStore.cs" />
+    <Compile Include="AbstractFactory\Product\ClamPizza.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Clams\FrozenClam.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Veggies\BlackOlives.cs" />
+    <Compile Include="AbstractFactory\Factory\ChicagoPizzaIngredientFactory.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Veggies\EggPlant.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Clams\FreshClams.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Veggies\Garlic.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Cheese\ICheese.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Clams\IClams.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Dough\IDough.cs" />
+    <Compile Include="AbstractFactory\Factory\IPizzaIngredientFactory.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Pepperoni\IPepperoni.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Sauce\ISauce.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Veggies\IVeggies.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Sauce\MarinaraSauce.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Veggies\Mushroom.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Cheese\Mozzarella.cs" />
+    <Compile Include="AbstractFactory\Factory\NYPizzaIngredientFactory.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Veggies\Onion.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Cheese\RaggianoCheese.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Veggies\RedPepper.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Pepperoni\SlicedPepperoni.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Dough\ThinCrustDough.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Dough\ThickCrustDough.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Sauce\PlumTomatoSauce.cs" />
+    <Compile Include="AbstractFactory\Ingredients\Veggies\Spinach.cs" />
+    <Compile Include="AbstractFactory\Creator\NYPizzaStore.cs" />
+    <Compile Include="AbstractFactory\Creator\PizzaStore.cs" />
+    <Compile Include="FactoryMethodPattern\Creater\ChicagoPizzaStore.cs" />
+    <Compile Include="FactoryMethodPattern\Product\ChicagoStyleCheesePizza.cs" />
+    <Compile Include="FactoryMethodPattern\Product\ChicagoStylePepperoniPizza.cs" />
+    <Compile Include="FactoryMethodPattern\Product\NYStyleCheesePizza.cs" />
+    <Compile Include="FactoryMethodPattern\Product\NYStylePepperoniPizza.cs" />
+    <Compile Include="FactoryMethodPattern\Product\Pizza.cs" />
+    <Compile Include="FactoryMethodPattern\Creater\PizzaStore.cs" />
+    <Compile Include="FactoryMethodPattern\Creater\NYPizzaStore.cs" />
+    <Compile Include="AbstractFactory\Product\Pizza.cs" />
+    <Compile Include="PizzaTestDrive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleFactory\Product\CheesePizza.cs" />
+    <Compile Include="SimpleFactory\Product\ClamPizza.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="SimpleFactory\Product\PepperoniPizza.cs" />
+    <Compile Include="SimpleFactory\Product\Pizza.cs" />
+    <Compile Include="SimpleFactory\Creator\PizzaStore.cs" />
+    <Compile Include="SimpleFactory\Factory\SimplePizzaFactory.cs" />
+    <Compile Include="SimpleFactory\Product\VeggiePizza.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Notes_FactoryPattern.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AbstractFactory\01Design\CD_AbstractFactory.cd" />
+    <None Include="FactoryMethodPattern\01Design\CD_Factory.cd" />
+    <None Include="SimpleFactory\01Design\CD_SimpleFactory.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,30 @@
+﻿
+----------------------------------------------------------------
+Head First Design Patterns
+Chapter ONE - Intro to Design Patterns
+----------------------------------------------------------------
+
+DP -> Design Principal 
+
+DP1 : Encapsulate what varies.
+DP2 : Program to an Interface, not an implementation
+DP3 : Favor Composition over Inheritence.
+
+Benifit of Reuse : 
+With this kind of design other types of Objects can reuse Fly & Quack Behaviors because these are no longer hidden in Duck Class.
+Also we can add new behaviors without modifying existing behavior class or Duck class.
+
+Strategy Pattern : 
+It Defines a family of algorithms, encapsulates each one, and makes them interchangeable. 
+Strategy lets the algorithm vary independently from clients that use it.
+
+We used "Strategy Pattern" in this example to rework the SimUDuck application. Now "MiniDuckSimulator" is ready for any changes.
+
+
+General Talk : 
+* Design Patterns give you a shared Vocabulary with other Developers once you got it you can more easily communicate with other
+  Developers and inspire others to learn them.
+* Think @ Pattern Level not the Nitty Gitty Object Level :-)
+* Say More With Less.
+* Stay in Desgin.
+* Build a Community of Pattern Users @ your organization.

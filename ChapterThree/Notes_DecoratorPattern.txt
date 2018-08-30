@@ -1,0 +1,34 @@
+﻿----------------------------------------------------------------
+Head First Design Patterns
+Chapter Three - The Decorator Pattern
+----------------------------------------------------------------
+
+										"DESIGN EYE FOR INHERITANCE GUY"
+
+DP1 : Classes should be OPEN for EXTENSION but CLOSED for MODIFICATION.
+
+Be careful while choosing the areas of code that needs to be extended;applying Open-Close principle EVERYWHERE is wasteful,unnecessary & lead
+to COMPLEX & Hard to Understand code.
+
+DECORATOR PATTERN attaches additional resposibilities to an object Dynamically.
+Decorators provide a flexible alternative to subclassing for extending functionality.
+
+- Decorators have the same supertype as the object they DECORATE.
+- You can use one or more DECORATORS to wrap an object.
+- We can pass around a Decorated object in place of original object.
+- The Decorator adds its own behavior either before and/or after delegating to the object it decorates to do the rest of job. [Key Point]
+- Objects can be decorated any time, so we can decorate at runtime with as many Decorators as we like.
+
+Confession of Decoratror :
+1. I can sometimes add a lot of classes to a design and results a complex design which is not easy to understand.
+2. I have "Typing" problem, if some client code relies on specific types you have to be careful.
+3. I increase the "Instantiate Component" and "Wrapping objects.
+
+Bullet Points :
+1. Inheritance is one form of extension but not necessarily the best way to achieve flexibility.
+2. We should allow behavior to be extended without modify existing code.
+3. Composition & Delegation can often be used to add new behaviors at runtime.
+4. Decorator Pattern provides alternative to subclassing for extending behaviors.
+5. Decorator Pattern involves set of Decorator that are used to wrap concrete components.
+6. Decorator classes Mirrors the type of component they decorate[Either through Inheritance or Interface].
+7. We can wrap component with any number of Decorators.

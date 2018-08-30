@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChapterFour.AbstractFactory.NYPizzaIngredientFactory" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAYAAAAAAAAAAAAAAAAAAAAAABCAAQAAAAA=</HashCode>
+      <FileName>AbstractFactory\Factory\NYPizzaIngredientFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.054" />
+  </Class>
+  <Class Name="ChapterFour.AbstractFactory.ChicagoPizzaIngredientFactory" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAYAAAAAAAAAAAAAAAAAAAAAABCAAQAAAAA=</HashCode>
+      <FileName>AbstractFactory\Factory\ChicagoPizzaIngredientFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ChapterFour.AbstractFactory.Pizza" Collapsed="true">
+    <Position X="1.5" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAUEIAAgAAAAQAAEAAAAACAAAAIAAAAgAAAAQAACRAA=</HashCode>
+      <FileName>AbstractFactory\Product\Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChapterFour.AbstractFactory.CheesePizza" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AbstractFactory\Product\CheesePizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChapterFour.AbstractFactory.ClamPizza" Collapsed="true">
+    <Position X="2.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AbstractFactory\Product\ClamPizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChapterFour.AbstractFactory.PizzaStore" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\Creator\PizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChapterFour.AbstractFactory.NYPizzaStore" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\Creator\NYPizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChapterFour.AbstractFactory.ChicagoPizzaStore" Collapsed="true">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\Creator\ChicagoPizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ChapterFour.AbstractFactory.IPizzaIngredientFactory" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAYAAAAAAAAAAAAAAAAAAAAAABCAAQAAAAA=</HashCode>
+      <FileName>AbstractFactory\Factory\IPizzaIngredientFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

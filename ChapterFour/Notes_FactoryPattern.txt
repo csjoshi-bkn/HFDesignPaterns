@@ -1,0 +1,44 @@
+﻿----------------------------------------------------------------
+Head First Design Patterns
+Chapter Four - The Factory Pattern
+----------------------------------------------------------------
+
+						"GET READY TO BAKE SOME LOOSELY COUPLED OO DESIGN"
+
+Simple Factory is not a design pattern, it's more of a Programming idiom.
+It's commonly used, this is not Factory Pattern don't get confused.
+
+- There is more to making object than the "new" operator.
+- Technically there is nothing wrong with new, the real culprit is our friend "CHANGE" :-)
+- Remember Decortaor ?? Close for Modify & Open for Extension.
+- Encapsulate the Object Creation.
+- Factories Handle the details of object creation.
+- we can create Static Factory method to avoid the Instatiation but than 
+  we can't subclass and change the behavior of that method.
+- ALL Factory Patterns Encapsulate Object Creation.
+- Factory Method Pattern encapsulates Object Creation by letting subclasses decide what object to create.
+
+  FACTORY METHOD PATTERN defines an Interface for creating an object, but lets subclasses decide 
+  which class to instantiate. Factory Methods lets a class defer instantiation of subclasses.
+
+  4 Main Parts :
+  1. Product
+  2. Concrete Product
+  3. Creater with Abstract Factory Method
+  4. Concrete Creator
+
+
+  DP1 : Depend upon Abstraction do not depend on Concrete Classes.
+  (Dependency Inversion Principle)
+
+  ABSTRACT FACTORY PATTERN provides an interface for creating families of related or dependent objects 
+  without specifying their concrete classes.
+
+  - Factory Methods are a natural way to implement your product methods in Abstract Factories.
+  - Both Factory Method & Abstract Factory patterns, encapsulate Object Creation & lead to more Decoupled & Flexible Design.
+  - Factory Method relies on Inheritance : Object creation is delegated to subclasses which implement the Factory Method to
+    create objects.
+  - Abstract Factory relies on Object Composition : Object creation is implemented in methods exposed in factory interface.
+  - All Factory patterns promote loose coupling by reducing dependency of your application in Concrete Classes.
+  - Intent of Factory Method : Allow class to defer instatiation to its subclasses.
+  - Intent of Abstract Factory : Create families of related objects without depending on their concrete classes.

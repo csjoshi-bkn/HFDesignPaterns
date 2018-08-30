@@ -1,0 +1,19 @@
+﻿
+----------------------------------------------------------------
+Head First Design Patterns
+Chapter Six - The Command Pattern
+----------------------------------------------------------------
+
+											"Encapsulating Invocation"
+
+The COMMAND PATTERN encapsulates a request as an object, thereby letting you parameterize other objects with different
+requests, queue or log requests, and support undoable operations.
+
+1. When we need to decouple an object making request from the object that know how to perform requests, Use this.
+2. Command Object is Centre of Decoupling & Encapsulates a reciever with an action or set of actions.
+3. An Invoker makes a request of Command Object by calling it's "Execute" method, which invokes action on reciever.
+4. Invokers can be parameterized with commands, even at runtime.
+5. Commands may support UNDO operations.
+6. Macro Commands are extension of commands that allow multiple commands to be Invoked.
+7. Smart Command Objects implement the request themselves rather than delegating to reciever.
+8. Can be used for Logging and Transactional systems.
